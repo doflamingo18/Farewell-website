@@ -1,2 +1,2 @@
 # Farewell-website
-Tripode
+Tripod
