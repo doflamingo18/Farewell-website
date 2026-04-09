@@ -76,3 +76,89 @@ body {
 .dropdown.show {
     display: block;
 }
+html {
+    scroll-behavior: smooth;
+}
+.gallery,
+.videos,
+.characters,
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+section {
+    scroll-margin-top: 100px;
+}
+/* IMAGES SECTION */
+#images {
+    background-image: url("images/gallery.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* VIDEOS */
+#videos {
+    background-image: url("images/videos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* CHARACTERS */
+#characters {
+    background-image: url("images/characters.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ABOUT */
+#about {
+    background-image: url("images/about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#images,
+#videos,
+#characters,
+#about {
+    position: relative;
+}
+
+#images::before,
+#videos::before,
+#characters::before,
+#about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+#images>*,
+#videos>*,
+#characters>*,
+#about>* {
+    position: relative;
+    z-index: 2;
+}
+#images,
+#videos,
+#characters,
+#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
